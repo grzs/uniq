@@ -11,7 +11,7 @@ def main():
         prev_line = line
 
     # this one is for the OG uniq:
-    if line and line[:-1] != "\n":
+    if line and line[-1:] != "\n":
         sys.stdout.write("\n")
 
 
