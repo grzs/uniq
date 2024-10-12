@@ -23,16 +23,16 @@ The main and only target and testing platform of the project is x86-64 Linux.
 
 # Implementations #
 
+- [x] awk
 - [x] elisp
+- [x] lisp
 - [x] python
 - [x] sh/bash
 - [ ] assembly
-- [ ] awk
 - [ ] brainfuck
 - [ ] c/c++
 - [ ] ecmascript
 - [ ] haskell
-- [ ] lisp
 - [ ] perl
 - [ ] php
 - [ ] rust
