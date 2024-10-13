@@ -6,9 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container:
-      image: ubuntu
-      options:
-        - --tty
+      options: --tty
     steps:
       - uses: actions/checkout@v4
       - name: install dependencies
