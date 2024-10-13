@@ -1,4 +1,4 @@
-name: Simple Python HTTP Server
+name: uniq
 
 on: [push]
 
@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: install dependencies
-        run: apt update && apt install -y emacs
+        run: sudo apt update && sudo apt install -y emacs
       - name: Run tests
         run: test/test.sh
