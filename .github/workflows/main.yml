@@ -1,6 +1,6 @@
 name: uniq
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
   test:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install dependencies
-        run: apt update && apt install -y make emacs sbcl
+        run: apt update && apt install -y make emacs-nox sbcl
       - name: Make
         run: make
       - name: Run tests
