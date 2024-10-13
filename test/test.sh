@@ -18,7 +18,7 @@ run_case() {
     REFERENCE_OUTPUT="$(cat "${INPUTS_DIR}/${INPUT_FILE}" | uniq)"
 
     for CMD in $(ls uniq.*)
-    do run_cmd || printf '%-15s - %s' "$INPUT_FILE" "$CMD" >> "${ERROR_LOGFILE}"
+    do run_cmd || printf '%-12s - %s\n' "$INPUT_FILE" "$CMD" >> "${ERROR_LOGFILE}"
     done
     echo
 }
