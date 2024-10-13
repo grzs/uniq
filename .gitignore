@@ -6,3 +6,5 @@ uniq.pyc
 uniq.elc
 /uniq.elc.sh
 /uniq.pyc.sh
+/src/go/uniq
+/uniq.go

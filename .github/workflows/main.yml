@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install dependencies
-        run: apt update && apt install -y make emacs-nox sbcl
+        run: apt update && apt install -y make emacs-nox sbcl golang-go
       - name: Make
         run: make
       - name: Run tests
