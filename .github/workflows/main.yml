@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: install dependencies
-        run: sudo apt update && sudo apt install -y emacs sbcl
+        run: apt update && apt install -y emacs sbcl
       - name: Run tests
         run: test/test.sh
