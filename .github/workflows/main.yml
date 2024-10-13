@@ -5,9 +5,12 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
+    container:
+      options:
+        - --tty
     steps:
       - uses: actions/checkout@v4
       - name: install dependencies
-        run: sudo apt update && sudo apt install -y emacs
+        run: sudo apt update && sudo apt install -y emacs sbcl
       - name: Run tests
         run: test/test.sh
