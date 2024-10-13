@@ -1,5 +1,5 @@
 uniq.pyc:
-	py3compile -v uniq.py
+	py3compile -OOv uniq.py
 	@cp -v ./__pycache__/*.pyc ./uniq.pyc
 	@chmod -v +x ./uniq.pyc
 

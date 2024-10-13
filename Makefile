@@ -13,7 +13,9 @@ uniq.fasl:
 
 uniq.pyc:
 	@$(MAKE) -C src/python
-	@ln -vs $(PWD)/src/python/uniq.pyc ./
+	echo '#!/bin/sh' > uniq.pyc.sh
+	echo "/usr/bin/python3 `realpath src/python/uniq.pyc`" >> uniq.pyc.sh
+	@chmod -v +x uniq.pyc.sh
 
 .PHONY: clean.elc.sh clean.fasl clean.pyc clean
 clean.elc.sh:

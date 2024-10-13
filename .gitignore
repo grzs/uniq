@@ -3,3 +3,6 @@
 *#
 uniq.fasl
 uniq.pyc
+uniq.elc
+/uniq.elc.sh
+/uniq.pyc.sh
