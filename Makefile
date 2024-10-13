@@ -28,4 +28,4 @@ clean.fasl:
 	@rm -vf ./uniq.fasl
 	@$(MAKE) -C src/common_lisp clean
 
-clean: clean.elc clean.pyc clean.fasl
+clean: clean.elc.sh clean.pyc clean.fasl
