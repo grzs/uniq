@@ -1,3 +1,5 @@
 # emacs tmp files
 *~
 *#
+uniq.fasl
+uniq.pyc
