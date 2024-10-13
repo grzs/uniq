@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func main() {
+func Uniq() {
 	var reader = bufio.NewReader(os.Stdin)
 	prevLine := ""
 	for {
@@ -27,4 +27,8 @@ func main() {
 		}
 		prevLine = line
 	}
+}
+
+func main() {
+	Uniq()
 }
