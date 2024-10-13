@@ -1,9 +1,11 @@
 .PHONY: all
-all: uniq.elc uniq.fasl uniq.pyc
+all: uniq.elc.sh uniq.fasl uniq.pyc
 
-uniq.elc:
+uniq.elc.sh:
 	@$(MAKE) -C src/elisp
-	@cp -v src/elisp/uniq.elc ./
+	echo '#!/bin/sh' > uniq.elc.sh
+	echo "/usr/bin/emacs -x `realpath src/elisp/uniq.elc`" >> uniq.elc.sh
+	@chmod -v +x uniq.elc.sh
 
 uniq.fasl:
 	@$(MAKE) -C src/common_lisp
@@ -13,9 +15,9 @@ uniq.pyc:
 	@$(MAKE) -C src/python
 	@cp -v src/python/uniq.pyc ./
 
-.PHONY: clean.elc clean.fasl clean.pyc clean
-clean.elc:
-	@rm -vf ./uniq.elc
+.PHONY: clean.elc.sh clean.fasl clean.pyc clean
+clean.elc.sh:
+	@rm -vf ./uniq.elc.sh
 	@$(MAKE) -C src/elisp clean
 
 clean.pyc:
