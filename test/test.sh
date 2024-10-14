@@ -14,7 +14,7 @@ run_cmd() {
     local output="$(cat "${INPUTS_DIR}/${INPUT_FILE}" | "${CMD}")"
     local rc=$?
     local end=$(date +%s.%N)
-    local duration=$(LC_NUMERIC="en_US.UTF-8" printf "%.4f" "$(echo $end - $begin | bc)")
+    local duration=$(LC_NUMERIC="C.UTF-8" printf "%.4f" "$(echo $end - $begin | bc)")
 
     test "${CMD}" = "uniq" && REFERENCE_OUTPUT="${output}"
 
