@@ -15,7 +15,7 @@ We were so impressed by this discovery, that we decided to reinvent the wheel.
 # Goal #
 
 This project maintains several implementations of the unix uniq utility, and beside the testing against the
-original, it also measures the running time of each with different input sets. (yet to come...)
+original, it also measures the running time of each with different input sets.
 
 # Disclaimer #
 
