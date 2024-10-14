@@ -36,6 +36,7 @@ The main and only target and testing platform of the project is x86-64 Linux.
 - [ ] haskell
 - [ ] perl
 - [ ] php
+- [ ] pypy
 - [ ] rust
 - [ ] zig
 
