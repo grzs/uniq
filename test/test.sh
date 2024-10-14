@@ -28,7 +28,6 @@ run_cmd() {
 
 run_case() {
     echo "${INPUT_FILE}:"
-
     for CMD in uniq $(ls uniq*)
     do run_cmd
     done | sort
