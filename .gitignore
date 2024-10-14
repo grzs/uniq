@@ -8,3 +8,4 @@ uniq.elc
 /uniq.pyc.sh
 /src/go/uniq
 /uniq.go
+/test/error.log
